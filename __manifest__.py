@@ -1,17 +1,16 @@
 {
     'name': 'One News & Events Manager',
-    'version': '1.1',
-    'summary': 'Full Backend for Next.js Events API with Image Uploads',
+    'version': '1.2',
+    'summary': 'Full Backend for Next.js Events API',
     'description': """
         Backend system to manage Events and News.
         Features:
         - Image Upload (Binary) + External URL support.
-        - Gallery Management.
         - API REST endpoints: /api/news-events
     """,
-    'category': 'Website',
-    'author': 'Tu Nombre',
-    'depends': ['base', 'web', 'website'],
+    'category': 'Backend',
+    'author': 'Alphaqueb Consulting',
+    'depends': ['base', 'web'], 
     'data': [
         'security/ir.model.access.csv',
         'views/event_views.xml',
@@ -20,5 +19,4 @@
     'installable': True,
     'application': True,
     'license': 'LGPL-3',
-    'icon': '/base/static/description/icon.png',
 }
