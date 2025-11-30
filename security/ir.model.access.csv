@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_one_event_public,one.event.public,model_one_event,,1,0,0,0
+access_one_event_user,one.event.user,model_one_event,base.group_user,1,1,1,1
+access_one_event_gallery_public,one.event.gallery.public,model_one_event_gallery,,1,0,0,0
+access_one_event_gallery_user,one.event.gallery.user,model_one_event_gallery,base.group_user,1,1,1,1

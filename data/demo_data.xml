@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Evento 1 -->
+        <record id="event_mineral" model="one.event">
+            <field name="name">Rare Mineral Exhibition</field>
+            <field name="slug">exhibicion-minerales-raros-2024</field>
+            <field name="status">upcoming</field>
+            <field name="date_display">Spring 2024</field>
+            <field name="time_display">10:00 AM - 6:00 PM</field>
+            <field name="location">Main Gallery, NYC</field>
+            <field name="organizer">One of a Kind Gallery</field>
+            <field name="contact">events@oneofakind.com</field>
+            <field name="description_short">Join us for our annual exhibition...</field>
+            <field name="description_long"><![CDATA[<p>Join us for our annual exhibition featuring the most recent acquisitions.</p><ul><li>Interactive displays</li></ul>]]></field>
+            <!-- Usamos external URL para el demo, pero el usuario puede subir una real luego -->
+            <field name="image_external_url">https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&amp;w=1600</field>
+        </record>
+
+        <record id="gal_min_1" model="one.event.gallery">
+            <field name="event_id" ref="event_mineral"/>
+            <field name="image_external_url">https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&amp;w=800</field>
+        </record>
+        <record id="gal_min_2" model="one.event.gallery">
+            <field name="event_id" ref="event_mineral"/>
+            <field name="image_external_url">https://images.unsplash.com/photo-1597523920677-24a9d7743d50?q=80&amp;w=800</field>
+        </record>
+
+        <!-- Evento 2 -->
+        <record id="event_ocean" model="one.event">
+            <field name="name">Ocean Collection Launch</field>
+            <field name="slug">lanzamiento-coleccion-oceano</field>
+            <field name="status">past</field>
+            <field name="date_display">Oct 2023</field>
+            <field name="location">Mexico City</field>
+            <field name="description_short">Celebrating the debut of our new collection...</field>
+            <field name="image_external_url">https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&amp;w=1600</field>
+        </record>
+    </data>
+</odoo>
